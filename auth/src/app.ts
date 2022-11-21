@@ -1,8 +1,8 @@
 import express from "express";
 import "express-async-errors";
 import cookieSession from "cookie-session";
-import { NotFoundEError } from "./errors/not-found-error";
-import { errorHandler } from "./middlewares/error-handler";
+import { NotFoundEError } from "@marismu/common";
+import { errorHandler } from "@marismu/common";
 import { currentUserRouter } from "./routes/current-user";
 import { signinRouter } from "./routes/signin";
 import { signoutRouter } from "./routes/signout";
